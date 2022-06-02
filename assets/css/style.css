@@ -9,6 +9,13 @@ body {
   margin: auto;
 }
 
+@media (max-width: 786px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+} /* Telefone */
+
 /* INICIO HEADER */
 header {
   width: 100%;
@@ -62,3 +69,90 @@ header div.actions button:hover {
 } /* Telefone */
 
 /* FIM HEADER */
+
+/* INICIO SOBRE */
+section#sobre {
+  background-color: #f7f5fd;
+  padding: 70px 0;
+}
+
+section#sobre div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#sobre div.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section#sobre div.info h1 {
+  color: #2d2d2d;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 90px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+section#sobre div.info p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #2d2d2d;
+  opacity: 0.5;
+}
+
+section#sobre div.info button {
+  padding: 16px 50px;
+  color: #2d2d2d;
+  font-size: 18px;
+  background-color: #f8d57e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 210px;
+}
+
+section#sobre div.img {
+  width: 500px;
+}
+
+section#sobre div.img img {
+  width: 100%;
+}
+
+@media (max-width: 786px) {
+  section#sobre {
+    background-color: #f7f5fd;
+    padding: 80px 20px;
+  }
+
+  section#sobre div.container {
+    flex-wrap: wrap;
+  }
+
+  section#sobre div.info h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  section#sobre div.info p {
+    text-align: center;
+  }
+
+  section#sobre div.info button {
+    align-self: center;
+    margin-top: 24px;
+  }
+
+  section#sobre div.img {
+    width: 100%;
+    margin-top: 60px;
+  }
+} /* Telefone */
+
+/* FIM SOBRE */
