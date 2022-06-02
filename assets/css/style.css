@@ -9,6 +9,7 @@ body {
   margin: auto;
 }
 
+/* INICIO HEADER */
 header {
   width: 100%;
   height: 100px;
@@ -37,16 +38,27 @@ header div.actions a {
 }
 
 header div.actions button {
-    padding: 16px 50px;
-    color: #ffffff;
-    font-size: 18px;
-    background-color: #3366ff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .3s;
+  padding: 16px 50px;
+  color: #ffffff;
+  font-size: 18px;
+  background-color: #3366ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 header div.actions button:hover {
-    background-color: #2a4fc1;
+  background-color: #2a4fc1;
 }
+
+@media (max-width: 786px) {
+  header div {
+    padding: 0 12px;
+  }
+  header div.actions {
+    display: none;
+  }
+} /* Telefone */
+
+/* FIM HEADER */
